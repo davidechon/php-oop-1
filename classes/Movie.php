@@ -6,12 +6,12 @@ class Movie{
   protected $trama;
   protected $locandina;
 
-  function __constructor($_titolo, $_regista, $_attori){
+  function __construct($_titolo, $_regista, $_attori){
     $this->titolo = $_titolo;
     $this->regista = $_regista;
     $this->attori = $_attori;
   }
-  
+
   public function getTitolo(){
     return $this->titolo;
   }

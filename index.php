@@ -37,8 +37,7 @@ $movies = [
     'trama' => 'lorem',
     'locandina' => 'locandina',
   ]
-  ];
-$Movies = [];
+];
 // var_dump($titolo);
 
 ?>
@@ -61,6 +60,7 @@ $Movies = [];
      <h3>Titolo: <?php echo $movie->getTitolo() ?> </h3>
      <h3>Regista: <?php echo $movie->getRegista() ?> </h3>
      <h3>Attori: <?php echo $movie->getAttori() ?> </h3>
+
   <?php
   }
   ?>
