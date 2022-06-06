@@ -11,6 +11,7 @@ class Movie{
     $this->regista = $_regista;
     $this->attori = $_attori;
   }
+  
   public function getTitolo(){
     return $this->titolo;
   }

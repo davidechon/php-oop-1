@@ -1,45 +1,45 @@
 <?php
-require_once __DIR__."/classes/Movie.php";
+require_once __DIR__.'/classes/Movie.php';
 
 $movies = [
   [
     'titolo' => 'Film1',
     'regista' => 'regista1',
-    'attori' => ['attore1', 'attore2', 'attore3'],
+    'attori' => 'attore1',
     'trama' => 'lorem',
     'locandina' => 'locandina',
   ],
   [
     'titolo' => 'Film2',
     'regista' => 'regista2',
-    'attori' => ['attore1', 'attore2', 'attore3'],
+    'attori' => 'attore2',
     'trama' => 'lorem',
     'locandina' => 'locandina',
   ],
   [
     'titolo' => 'Film3',
     'regista' => 'regista3',
-    'attori' => ['attore1', 'attore2', 'attore3'],
+    'attori' => 'attore3',
     'trama' => 'lorem',
     'locandina' => 'locandina',
   ],
   [
     'titolo' => 'Film4',
     'regista' => 'regista4',
-    'attori' => ['attore1', 'attore2', 'attore3'],
+    'attori' => 'attore4',
     'trama' => 'lorem',
     'locandina' => 'locandina',
   ],
   [
     'titolo' => 'Film5',
     'regista' => 'regista5',
-    'attori' => ['attore1', 'attore2', 'attore3'],
+    'attori' => 'attore5',
     'trama' => 'lorem',
     'locandina' => 'locandina',
   ]
   ];
 $Movies = [];
-
+// var_dump($titolo);
 
 ?>
 
@@ -57,10 +57,10 @@ $Movies = [];
     foreach($movies as $key => $value){
       $movie = new Movie($value['titolo'], $value['regista'], $value['attori']);
   ?>
-     <!-- <h3>Film: <?php echo "{$movie->getTitolo()} - {$movie->getRegista()} - {$movie->getAttori()}" ?> </h3> -->
-     <h3>Titolo: <?php echo "{$movie->getTitolo()}" ?> </h3>
-     <h3>Regista: <?php echo "{$movie->getRegista()}" ?> </h3>
-     <h3>Attori: <?php echo "{$movie->getAttori()}" ?> </h3>
+     <!-- <h3>Film: php echo "{$movie->getTitolo()} - {$movie->getRegista()} - {$movie->getAttori()}" ?> </h3> -->
+     <h3>Titolo: <?php echo $movie->getTitolo() ?> </h3>
+     <h3>Regista: <?php echo $movie->getRegista() ?> </h3>
+     <h3>Attori: <?php echo $movie->getAttori() ?> </h3>
   <?php
   }
   ?>
